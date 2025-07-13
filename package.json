@@ -4,6 +4,7 @@
   "main": "server/index.ts",
   "type": "module",
   "scripts": {
+    "setup": "cp .env.example .env && echo 'Configure environment variables in .env file'",
     "dev": "node --experimental-strip-types --watch --env-file=.env server/index.ts",
     "start": "NODE_ENV=production node --experimental-strip-types --env-file-if-exists=.env server/index.ts",
     "type-check": "tsc"
