@@ -1,0 +1,16 @@
+{
+  "extends": ["@tsconfig/node22"],
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "node20",
+    "types": ["node"],
+    "rewriteRelativeImportExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+
+    // Nice to haves
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true
+  }
+}
